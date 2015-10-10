@@ -1,0 +1,6 @@
+<p> Saved Dogs </p>
+<% @dogs.each do |d| %>
+	<%= link_to d.name, dog_path(d) %>
+	<%= d.age %>
+<% end %>
+<%= link_to "new", dogs_new_path %>
